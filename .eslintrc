@@ -1,0 +1,77 @@
+{
+    "root": true,
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "testing-library",
+      "react"
+    ],
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "rules": {
+      "@typescript-eslint/explicit-module-boundary-types": "off",
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/no-non-null-assertion": "off",
+      "@typescript-eslint/no-unused-vars": ["warn", { "varsIgnorePattern" : "React" }],
+      "no-case-declarations": "off",
+      "no-debugger": "warn",
+      "no-console": "warn",
+      "no-empty": "warn",
+      "@typescript-eslint/no-empty-function": "off",
+      "@typescript-eslint/no-inferrable-types": "off",
+      "no-constant-condition": "off",
+      "prefer-const": "warn",
+      "keyword-spacing": "off",
+      "react/prop-types": "off",
+      "react/display-name": "off",
+      "semi": ["warn", "never"],
+      "@typescript-eslint/keyword-spacing": ["warn", { "before": true }],
+      "arrow-spacing": ["warn", { "before": true, "after": true}],
+      "space-before-blocks": "warn",
+      "brace-style": "warn",
+      "quotes": ["warn", "single"],
+      "quote-props": ["warn", "as-needed"],
+      "indent": ["warn", 4, { "SwitchCase": 1}],
+      "space-infix-ops": "off",
+      "@typescript-eslint/space-infix-ops": ["warn", { "int32Hint": false }],
+  
+      "no-multi-spaces": ["warn", { "ignoreEOLComments": true }],
+      "array-bracket-spacing": ["warn", "never"],
+      "space-in-parens": ["warn", "never"],
+      "no-multiple-empty-lines": ["warn", { "max": 1}],
+      "no-mixed-spaces-and-tabs": ["warn", "smart-tabs"],
+      "jsx-quotes": ["warn", "prefer-single"],
+      "comma-spacing": ["warn", { "before": false, "after": true }],
+      "no-trailing-spaces": ["warn", { "skipBlankLines": true, "ignoreComments": true }],
+      "react/self-closing-comp": ["warn", {
+        "component": true,
+        "html": true
+      }],
+      "react/jsx-curly-brace-presence": ["warn", { "props": "never", "children": "always" }],
+      "react/jsx-tag-spacing": ["warn", {
+        "closingSlash": "never",
+        "beforeSelfClosing": "always",
+        "afterOpening": "never",
+        "beforeClosing": "never"
+    }],
+      "@typescript-eslint/member-delimiter-style": ["warn", {
+        "multiline": {
+          "delimiter": "none",
+          "requireLast": false
+        },
+        "singleline": {
+          "delimiter": "comma",
+          "requireLast": false
+        }
+      }],
+      "testing-library/await-async-query": "off",
+      "testing-library/no-await-sync-query": "error",
+      "testing-library/no-debug": "warn"
+    }
+}
